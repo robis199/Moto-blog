@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #FCF4ED;
+    margin: 0;
+    font-family: 'Poppins';
+    
+}
+
+.top-nav {
+    background: white;
+    padding: 1em;
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    
+    display: flex;
+    place-content: space-between;
+}
+
+.primary-nav {
+    list-style: none;
+}
+
+
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+
+a {
+
+    color: #444444;
+}
+
+
+section {
+    padding: 8em;
+}
+
+.hero {
+    text-align: center;
+    background-image: url('/Gala-darbs/images/pexels-rachel-claire-4577657.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+h1 {
+font-size: 2.5em;
+line-height: 1.3em;
+margin-top: .2em;
+}
+
+
+.primary-cta {
+    background: #01B1A0;
+    color: white;
+    text-decoration: none;
+    padding: .6em 1.3em;
+    border-radius: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.learn-more-cta {
+    display: inline-block;
+    margin-top: 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1em;
+
+}
+
+.blog-section {
+
+  background: #e6e0e0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /* width: 1000px; */
+  min-height: 300px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+
+}
+
+.blog-section .container {
+    padding: 2px 16px;
+  }
+
+
+h2 {
+    text-align: center;
+}
+
+.blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: row; */
+  overflow: hidden;
+  width: 220px;
+  min-height: 350px;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  /* padding: 20px; */
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+
+
+.card .container {
+    display: grid;
+    justify-items: center;
+    margin: 0;
+
+}
+
+.card .container p {
+  padding-left: 20px;
+}
+
+
+
+.button {
+    background: #01B1A0;
+    color: white;
+    text-decoration: none;
+    padding: .2em 1.3em;
+    border-radius: 5em;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+
+.testimonials-section {
+    background: #E6E6E6;
+    /* width: 1000px; */
+}
+
+
+.testimonials-section h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+
+  .mySlides {
+    display:none;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: .9em;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  } 
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
+  .contact {
+    background: #424B5A;
+    display: block;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 13em;
+    padding-top: 3em;
+  }
+
+  .contact .container {
+      display: block;
+  }
+
+  .contact .container h4 {
+      color: white;
+      font-size: 2em;
+  }
+
+  .contact .container p {
+
+    color: #A1AEB7;
+    padding-bottom: 1em;
+    
+
+  }
+  
+
+
+  .button-contact {
+    background: #01B1A0;
+    color: white;
+    text-decoration: none;
+    padding: .3em 1.3em;
+    border-radius: 5em;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 2em;
+  }
+
+
+
+
+
+  footer {
+
+    background: white;
+    padding-bottom: 2em;
+  }
+
+  footer p {
+      text-align: center;
+      color: grey;
+      padding-bottom: 1em;
+      margin:0;
+    padding-top: 2em;
+
+  }
+
+  .footer-nav {
+    list-style: none;
+
+  }
+
+  .footer-navigation .footer-nav {
+      display: flex;
+      justify-content: center;
+  }
+
+  
+
+
+  
+  nav.mobile-menu {
+      display: block;
+  }
+
+  nav {
+      position: fixed;
+      z-index: 999;
+      width: 66%;
+      right: 0;
+      top: 0;
+      background:#20272E;
+      height: 100vh;
+      padding: 1em;
+
+  }
+
+  ul.primary-nav {
+      margin-top: 5em;
+
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    font-size: 1.3em;
+    text-align: right;
+  }
+
+  li a:hover{
+      font-weight: bold;
+  }
+  
+
+  .mobile-menu-exit {
+     float: right;
+     margin: .5em;
+     cursor:pointer;
+  }
+
+
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .top-nav .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        
+    }
+
+    .top-nav nav {
+        display: flex;
+        justify-content: space-between;
+        background:none;
+        position:unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+    }
+
+   ul a {
+        color: black;
+        font-size: 1em;
+        padding: .1em 1em;
+    }
+
+    ul.primary-nav {
+        margin: 0;
+    }
+
+    
+}
+
+
+

@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  background: #fcf4ed;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+.top-nav {
+  background: white;
+  padding: 1em;
+}
+
+nav {
+  display: none;
+}
+
+.container {
+  display: flex;
+  place-content: space-between;
+}
+
+.primary-nav {
+  list-style: none;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+.container-contact {
+  margin: 0;
+  padding: 4em;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about ul {
+  display: block;
+}
+
+.about ul li {
+  list-style: none;
+  padding: 0.4em;
+}
+
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+.send-message-cta {
+  background: #01b1a0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .top-nav .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+
+  .top-nav nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  ul a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+
+  ul.primary-nav {
+    margin: 0;
+  }
+}
+
+footer {
+  background: white;
+  padding-bottom: 1em;
+}
+
+footer p {
+  text-align: center;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-navigation .footer-nav {
+  display: flex;
+  justify-content: center;
+}
